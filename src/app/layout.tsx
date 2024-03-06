@@ -1,22 +1,23 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
-import "./globals.css";
+import Children from "../types/children";
 
-const inter = Montserrat({ subsets: ["latin"] });
+import "../../globals.css";
+
+const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "PARFUM E-COMMERCE",
-  description: "Parfumeriya veb ilovasi, ushbu veb ilova Fakhriddin Oripov tomonidan tayyorlangan",
+  description:
+    "Parfumeriya veb ilovasi, ushbu veb ilova Fakhriddin Oripov tomonidan tayyorlangan!",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: Children) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="uz">
+      <body className={montserrat.className}>
+        {children}
+      </body>
     </html>
   );
 }
