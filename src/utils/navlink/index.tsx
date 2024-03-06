@@ -9,7 +9,12 @@ const NavLink = ({ href, children }: { href: string } & Children) => {
   const pathName = usePathname();
 
   return (
-    <Link href={href} className={pathName === href ? "text-red-600" : ""}>
+    <Link
+      href={href}
+      className={
+        pathName === href ? "text-red-600" : "px-4 text-green-500"
+      }
+    >
       {children}
     </Link>
   );
