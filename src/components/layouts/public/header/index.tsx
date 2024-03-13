@@ -1,4 +1,4 @@
-import NavLink from "@/utils/navlink";
+import NavLink from "@/components/navlink";
 import Image from "next/image";
 import React, { Fragment } from "react";
 
@@ -6,7 +6,7 @@ const PublicHeader = () => {
   return (
     <Fragment>
       <header>
-        <nav className="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
+        <nav>
           <NavLink href="/">Bosh sahifa</NavLink>
           <NavLink href="/about">Haqida</NavLink>
           <NavLink href="/products">Mahsulotlar</NavLink>

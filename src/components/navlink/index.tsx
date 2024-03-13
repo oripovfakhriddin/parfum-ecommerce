@@ -11,9 +11,7 @@ const NavLink = ({ href, children }: { href: string } & Children) => {
   return (
     <Link
       href={href}
-      className={
-        pathName === href ? "text-red-600" : "px-4 text-green-500"
-      }
+      className={pathName === href ? "text-red-600" : "text-green-500"}
     >
       {children}
     </Link>
